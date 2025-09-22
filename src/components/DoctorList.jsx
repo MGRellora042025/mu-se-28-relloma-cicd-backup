@@ -67,9 +67,11 @@ function DoctorList() {
 
       <table>
         <thead>
-          <th>ID</th>
-          <th>Name</th>
-          <th></th>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th></th>
+          </tr>
         </thead>
         <tbody>
           {doctor.map(doc => <TableRow id={doc.id} name={doc.name} onDelete={() => handleDeleteOnClick(doc.id)} /> )}
